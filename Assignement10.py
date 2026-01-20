@@ -33,18 +33,16 @@ print("Factorial is:", result)
 
 # 4 WAP which accpets one number and print all even numbers till that number
 def printEvenNumbers(num):
-    for index in range(1,num+1):
-        if index % 2 == 0:
-            print(index)
+    for index in range(2,num+1,2):
+        print(index)
 
 printEvenNumbers(10)
 
 
 #5 # 4 WAP which accpets one number and print all odd numbers till that number
 def printOddNumbers(num):
-    for index in range(1, num+1):
-        if index % 2 == 1:
-            print(index)
+    for index in range(1,  num+1,2):
+        print(index)
 
 printOddNumbers(10)
 
