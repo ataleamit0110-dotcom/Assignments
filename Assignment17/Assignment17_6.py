@@ -1,7 +1,12 @@
 
 #3 . display pattern
-def displayPatter(rows):
+# *****
+# ****
+# ***
+# **
+# *
+def displayPattern(rows):
     for i in range(rows,0,-1):
        print("*" *i)
 
-displayPatter(5) 
+displayPattern(5) 

@@ -5,10 +5,10 @@
 # 12345
 # 12345
 # 12345
-def displayPatter(rows):
+def displayPattern(rows):
     for i in range(rows):
        for j in range(1, rows + 1):
            print(j, end="")
        print()
 
-displayPatter(5) 
+displayPattern(5) 
