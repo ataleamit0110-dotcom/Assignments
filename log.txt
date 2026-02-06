@@ -1,0 +1,6 @@
+Duplicate files found:
+
+Checksum: 425b80d3586099f00d2a294eecdf3925
+  Demo.txt
+  Demo1.txt
+

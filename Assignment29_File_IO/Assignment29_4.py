@@ -9,7 +9,7 @@ def filesAreEqual(file1, file2):
             if data1 != data2:
                 return False
 
-            if not data1:  # both reached EOF
+            if not data1:  # both reached EOF. its like b'' - Empty byte
                 return True
 
 

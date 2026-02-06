@@ -3,7 +3,7 @@ def copyFile(sourceFile, destFile):
         
         while True:
             print("Copying...")
-            data = sFileObj.read(2) # 1 KB at a time
+            data = sFileObj.read(2) # 2 KB at a time
             print(data)
             if not data:
                 break

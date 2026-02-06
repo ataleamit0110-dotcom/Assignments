@@ -8,8 +8,8 @@ def dispalyContent(fileName):
         print("File does not exist in current directory")
         return
     with open(fileName, "r") as fileObj:
-        for line in fileObj:
-            print(line)
+        for a in fileObj:
+            print(a)
     
 if __name__ == "__main__":
     main()
