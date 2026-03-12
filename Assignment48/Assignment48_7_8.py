@@ -13,7 +13,12 @@ for a, p in zip(actual, predicted):
     elif a == 1 and p == 0:
         FN += 1
 
-print("TP:", TP)
-print("TN:", TN)
-print("FP:", FP)
-print("FN:", FN)
+print("TP:", TP)# 3
+print("TN:", TN)# 3
+print("FP:", FP)#1
+print("FN:", FN)#1
+
+
+# Other way
+# cm = confusion_matrix(actual, predicted)
+# TN, FP, FN, TP = cm.ravel()
