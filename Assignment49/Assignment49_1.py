@@ -1,0 +1,49 @@
+import pandas as pd
+from sklearn.datasets import load_diabetes
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
+
+data = [
+    [6,148,72,35,0,33.6,0.627,50,1],
+    [1,85,66,29,0,26.6,0.351,31,0],
+    [8,183,64,0,0,23.3,0.672,32,1],
+    [1,89,66,23,94,28.1,0.167,21,0],
+    [0,137,40,35,168,43.1,2.288,33,1],
+    [5,116,74,0,0,25.6,0.201,30,0],
+    [3,78,50,32,88,31.0,0.248,26,1],
+    [10,115,0,0,0,35.3,0.134,29,0],
+    [2,197,70,45,543,30.5,0.158,53,1],
+    [8,125,96,0,0,0,0.232,54,1],
+    [4,110,92,0,0,37.6,0.191,30,0],
+    [10,168,74,0,0,38.0,0.537,34,1],
+    [10,139,80,0,0,27.1,1.441,57,0]
+]
+
+columns = [
+    "Pregnancies","Glucose","BloodPressure","SkinThickness",
+    "Insulin","BMI","DiabetesPedigreeFunction","Age","Outcome"
+]
+
+df = pd.DataFrame(data, columns=columns)
+
+# print(df.head())
+# print(df.info())
+
+# print(df.isnull().sum())
+# print(df.describe())
+
+df['Outcome'].value_counts().plot(kind='bar')
+
+# plt.title("Distribution of Diabetes Outcome")
+# plt.xlabel("Outcome (0 = No, 1 = Yes)")
+# plt.ylabel("Count")
+
+# #plt.show()
+
+# df.boxplot(figsize=(12,6))
+# plt.title("Boxplot of All Features")
+# plt.xticks(rotation=45)
+#plt.show()
+
